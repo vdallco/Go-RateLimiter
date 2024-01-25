@@ -5,7 +5,7 @@ Simple rate limiter in Golang
 
 # How it works
 
-This rate limiter stores hashmap of API keys mapped to request timestamps. When a new request is made, the rate limiter will remove any request timestamps older than n seconds. Before the request is processed, the current timestamp is added to the map for the API key. The rate limiter then enforces that the number of requests the API caller has sent in the past n seconds is equal to or less than m.
+This rate limiter stores a hashmap of API keys mapped to request timestamps. When a new request is made, the rate limiter will remove any request timestamps older than n seconds. Before the request is processed, the current timestamp is added to the map for the API key. The rate limiter then enforces that the number of requests the API caller has sent in the past n seconds is equal to or less than m.
 
 
 # How to run
